@@ -11,6 +11,8 @@ for flavour in flavours:
     #Keep asking for the appropriate amount of pizza flavour
     while True:
         try:
+
+            #Store the input of amount in 'string' type
             pizza = input(f'How many {flavour} pizzas do we want? ')
 
             #Checking if the input includes a coma sign, decimal point, or minus sign
