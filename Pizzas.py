@@ -1,4 +1,4 @@
-                            """ This program will ask the amount for every flavours of pizza and print them, except if the amount is 0"""
+""" This program will ask the amount for every flavours of pizza and print them, except if the amount is 0"""
 
 #Initialise the flavours of pizzas, the ignored number, and the storage to store the amount of each pizzas
 ignored_num = 0
