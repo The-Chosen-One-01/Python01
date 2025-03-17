@@ -1,7 +1,7 @@
 """ This program will ask the amount for every flavours of pizza and print them, except if the amount is 0"""
 
 #Initialise the flavours of pizzas, the ignored number, and the storage to store the amount of each pizzas
-ignored_num = 0
+IGNORED_NUM = 0
 flavours = ['cheese','chicken','pepperoni','veggie']
 amounts = {}
 
@@ -12,7 +12,7 @@ for flavour in flavours:
     while True:
         try:
 
-            #Store the input of amount in 'string' type
+            #Store the input of amount in 'string' type 
             pizza = input(f'How many {flavour} pizzas do we want? ')
 
             #Checking if the input includes a coma sign, decimal point, or minus sign
@@ -37,7 +37,7 @@ for flavour in amounts:
     pizza_amount = amounts[flavour]
 
     #Check if the amount of pizza is not the ignored number
-    if pizza_amount > 0:
+    if pizza_amount != IGNORED_NUM:
         print(f'{flavour.title()}: {pizza_amount}')
 
 
