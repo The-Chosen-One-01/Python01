@@ -2,7 +2,7 @@
 batteries = []
 MINIMUM = 1.2
 BOUNDARY = 0
-
+print(11 > 10.7)
 #Running a loop for asking the user batteries until the breaking point of input is inputted.
 while True:
     #Checking if the input is an integer to begin with
