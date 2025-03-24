@@ -39,6 +39,3 @@ for flavour in amounts:
     #Check if the amount of pizza is not the ignored number
     if pizza_amount != IGNORED_NUM:
         print(f'{flavour.title()}: {pizza_amount}')
-
-
-        
