@@ -2,7 +2,7 @@
 
 #Initialise the maximum speed of the asteroid to survive, the storage to store the speed of asteroids, and the amount of asteroids that will burn up
 MAXIMUM_SPEED = 11
-asteroids = []
+survived_asteroids = []
 burn_up = 0
 
 #Initialise the loop for asking the user for the speed of asteroid
@@ -21,13 +21,12 @@ while True:
         if asteroid > MAXIMUM_SPEED:
             burn_up += 1
 
-        #Otherwise, store the speed in the 'asteroids' list
+        #Otherwise, store the speed in the 'survived_asteroids' list
         else:
-            asteroids.append(asteroid)
+            survived_asteroids.append(asteroid)
 
     #Had the user did not input an integer, check if the input is 'conclude' or just some inappropriate input
     except Exception:
-        asteroid = str(asteroid)
         if asteroid.lower() == 'conclude':
             break
         print('Invalid speed.')
@@ -37,5 +36,5 @@ print(f'{burn_up} asteroids will burn up.')
 
 #Iterate through each of the survived asteroids to print them
 print('The asteroids that survived were going')
-for asteroid in asteroids:
+for asteroid in survived_asteroids:
     print(f'{asteroid} km/s')
